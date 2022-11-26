@@ -1,9 +1,10 @@
-# Code Appendix
-Code for federated learning (FL).
+# Code of AAAI 2023 paper:
+
+FedMDFG: Federated Learning with Multi-Gradient Descent and Fair Guidance
 
 ## Requirements to run the code:
 
-Python 3.6
+Python >3.6
 
 Numpy
 
