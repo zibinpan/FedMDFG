@@ -118,9 +118,6 @@ class DataLoader_cifar10_unbalanced(fp.DataLoader):
             
             create_data_pool(data_pool, test_input_data, test_target_data, 'local_test')
             
-            min_batch_num = min([len(pool_item['local_training_data']) for pool_item in data_pool])
-            for pool_item in data_pool:
-                pool_item['local_training_data'] = pool_item['local_training_data'][:min_batch_num]
             self.data_pool = data_pool
             
             np.save(file_path, self)
